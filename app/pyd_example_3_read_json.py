@@ -6,7 +6,6 @@ from datetime import timedelta
 
 import json
 
-from pydantic.v1.datetime_parse import date_re
 
 
 def check_date_of_birth(date_4_check):
