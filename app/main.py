@@ -29,8 +29,8 @@ async def log_user(user_id: str) -> dict:
 # По нему должно выводиться сообщение "Информация о пользователе. Имя: <username>, Возраст: <age>".
 
 @app.get("/id")
-async def id_paginator(username: str, age: int) -> dict:
-    return {f"User Information: Username: {username}, Age: {age}"}
+async def id_user(username: str, age: int) -> dict:
+    return {"message": f"User Information. Username: {username}, Age: {age}"}
 #http://127.0.0.1:8000/id?username=Ilya&age=24
 
 
