@@ -33,3 +33,4 @@ async def id_paginator(username: str, age: int) -> dict:
     return {f"User Information: Username: {username}, Age: {age}"}
 #http://127.0.0.1:8000/id?username=Ilya&age=24
 
+
