@@ -22,7 +22,7 @@ class TaskCreate(BaseModel):
     is_completed: bool=False
 
 
-app = FastAPI()
+app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True}, debug=True)
 
 tasks: List[Task] = [
     Task(id = 1, description = "Task 1", is_completed = False),

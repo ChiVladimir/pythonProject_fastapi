@@ -3,8 +3,7 @@ from typing import Annotated
 
 #rename file - uvicorn main:app --reload
 
-app = FastAPI()
-
+app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True}, debug=True)
 #Создайте маршрут к главной странице - "/". По нему должно выводиться сообщение "Главная страница".
 
 @app.get("/")

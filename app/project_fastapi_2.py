@@ -9,7 +9,7 @@ from fastapi.openapi.utils import status_code_ranges
 
 # http://127.0.0.1:8000/
 
-app = FastAPI()
+app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True}, debug=True)
 
 tasks = [
     {"id": 1, "description": "Task 1"},

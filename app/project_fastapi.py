@@ -5,7 +5,7 @@ from typing import Annotated
 
 # http://127.0.0.1:8000/
 
-app = FastAPI()
+app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True}, debug=True)
 
 message_db = {"0": "First post in FastAPI"}
 

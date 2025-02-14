@@ -2,7 +2,7 @@ from fastapi import FastAPI, Path, HTTPException
 from typing import Annotated
 
 
-app = FastAPI()
+app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True}, debug=True)
 
 users = {
     '1': 'Имя: Example, возраст: 18'
